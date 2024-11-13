@@ -16,7 +16,7 @@
                 integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy"
                 crossorigin="anonymous">
         <title>Quiz Games</title>
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/general.css">
         <script src="https://kit.fontawesome.com/2b9bf6fa94.js" crossorigin="anonymous"></script>
 
 
@@ -24,117 +24,51 @@
 </head>
 
 <body>
-        <header>
-                <div class="logo">
-                        <a class="navbar-brand" href="index.html">Quiz geames!</a>
-                </div>
-                <ul class="nav justify-content-end">
-                        <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="Arun.html">Arun</a>
-                        </li>
-                        <li class="nav-item">
-                                <a class="nav-link" href="Joe.html">Joe</a>
-                        </li>
-                        <li class="nav-item">
-                                <a class="nav-link" href="Maciej.html">Maciej</a>
-                        </li>
-                        <li class="nav-item">
-                                <a class="nav-link" href="Madiha.html">Madiha</a>
-                        </li>
-
-                </ul>
-                <section id="top">
-                        <div class="hero">
-                                <div class="float-center mt-5 me-2 ms-2 mb-5 p-5 text-center bg-transparent">
-
-                                        <div>
-                                                <p>Welcome to the quiz! Get ready to challenge your knowledge, have some
-                                                        fun, and maybe even learn something new. Let’s see how many you
-                                                        can get right – good luck, and enjoy the game!</p>
-                                        </div>
-                                </div>
+        <body>
+                <!--Header-->
+                <main class="container">
+            
+                    <h1>General knowledge</h1>
+                   
+                <div id="intro">
+                        <h2> Click Lets Check to find out level of your knowledge by answering 10 simple questions!</h2> 
+                    </div>
+            
+                 <!--Game field-->
+                 
+                 <div class="game-area">
+                    <button id="start-game" class="start-game">Lets Check!</button>
+                    <div id="question" class="hide">question goes here!</div>
+                    <br>
+                    <div id="answer-buttons" class="btn-grid hide">
+                        <button id="button-a" class="btn">A.</button>
+                        <button id="button-b" class="btn">B.</button>
+                        <button id="button-c" class="btn">C.</button>
+                        <button id="button-d" class="btn">D.</button>
+            
+                        <!--Submit Button-->
+                        <button id="submit-btn" data-type="submit" class="submit-btn">Submit Answer</button>
+                        <button id="next-btn" data-type="submit" class="next-btn hide">Next Question</button>
+            
+                        <!--Number of the question-->
+                        <div class="question-counter">
+                            <p><span id="question-number">1</span>/<span>10</span></p>
                         </div>
-
-                </section>
-
-
-
-        </header>
-
-
-
-
-        <main>
-
-                <div class="card  text-center" style="width: 18rem float-center text-center;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body ">
-                                <h5 class="card-title">Question 1</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
-                                        elit. Itaque
-                                        corporis officiis error fugit est optio temporibus corrupti aliquid, veritatis
-                                        dolor?</p>
                         </div>
-                        <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Answer A
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, omnis.
-                                        </p>
-                                </li>
-                                <li class="list-group-item">Answer B
-                                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quos commodi
-                                                aspernatur, ex mollitia rerum soluta maiores repellat consequuntur.
-                                                Ullam.</p>
-                                </li>
-                                <li class="list-group-item">Answer C
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat deleniti
-                                                delectus, dolores optio maxime aspernatur?</p>
-                                </li>
-                        </ul>
-                        <div class="card-body">
-                                <a href="#" class="card-link">True</a>
-                                <a href="#" class="card-link">False</a>
-                        </div>
-                </div>
-
-        </main>
-
-
-
-
-
-
-        <footer>
-                <nav class="nav bg-transparent">
-                        <div class="container-fluid " id="social-networks">
-                                <ul class="navbar-nav">
-                                        <li><a href="https://www.linkedin.com/" target="_blank" class="github"
-                                                        rel="noopener" aria-label="github"><i
-                                                                class="fa-brands fa-github"></i></a></li>
-                                        <li><a href="https://x.com/your-handle" target="_blank" class="github"
-                                                        rel="noopener" aria-label="Find more on X "><i
-                                                                class="fa-brands fa-github"></i></a></li>
-                                        <li><a href="https://github.com/ender805" target="_blank" class="github"
-                                                        rel="noopener" aria-label="Find more project on Github"><i
-                                                                class="fa-brands fa-github"></i></a></li>
-                                        <li><a href="https://drive.google.com/drive" target="_blank" class="github"
-                                                        rel="noopener" aria-label="Google drive"><i
-                                                                class="fa-brands fa-github"></i></a></li>
-                                </ul>
-
-
-                        </div>
-                </nav>
-
-
-        </footer>
-
-
-
-
-
-
-
-</html>
+                    <!--Result Display-->
+                    <div id="result-box" class="hide">
+                        <p>You score is: <span id="user-score">0</span>/10!</p>
+                        <br>
+                        <div id="personal-message">Personal message</div>
+                        <button id="start-new-game-btn">Start a New Questionaire!</button>
+                    </div>
+                </div> 
+            </main>
+                
+                <script src="https://kit.fontawesome.com/57a5431661.js" crossorigin="anonymous"></script>
+                <script type="module" src="assets/js/script.js"></script>
+                <script type="module" src="assets/js/questionaire.js"></script>
+            </body>
+            
+            
+            

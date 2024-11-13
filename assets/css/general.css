@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&family=Nunito:ital,wght@0,300;1,300;1,400&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: url("../images/background.jpg");
+    font-family: "Nunito", sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+}
+
+/* TITLE */
+h1 {
+    margin: 30px 0 30px 0;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 3em;
+    color: rgb(18, 6, 185);
+}
+
+h2 {
+  margin: 5px 0 30px 0;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-size: 2em;
+  color: rgb(18, 6, 185);
+}
+
+#intro {
+  padding-top: 30px;
+}
