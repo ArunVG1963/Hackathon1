@@ -114,10 +114,11 @@ nav li {
 
 }
 #nameDiv {
-  background-color: #837f7f;
+  background-color: rgba(98, 94, 211, 0.849);
   border:1px #080707;
   height:auto;
   width:auto;
+  border-radius: 20px;
 }
 .hiddenDiv {
   display: none;
