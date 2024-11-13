@@ -122,10 +122,20 @@ body {
   }
   
   
-  .github {
-    color: #080707;
-    text-shadow: 1px 1px 5px rgba(98, 94, 211, 0.849);
-  }
+.github {
+    font-size: 0; /* Hides text artifacts */
+}
+
+.github-profile-image {
+  display: inline-block;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  border:1px solid rgb(194, 193, 193);
+  box-shadow: 0px 0px 20px rgb(254, 254, 254);
+  
+}
+  
   /* add css styling for name field */
   #name {
     color: rgb(114, 27, 201);
@@ -144,7 +154,7 @@ body {
   }
   
   
-  
+
   
   
   
