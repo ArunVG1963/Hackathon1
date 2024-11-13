@@ -136,10 +136,7 @@ const MyquizData = [
       }
     }
   }
-  function displayQuestionNo(ANumber){
-    console.log(ANumber);
-    document.getElementById("Qnumber").innerText=`${ANumber}`;
-    }
+  
   function displayResult() {
     quizContainer.style.display = 'none';
     submitButton.style.display = 'none';
@@ -147,6 +144,7 @@ const MyquizData = [
     showAnswerButton.style.display = 'inline-block';
 
     resultContainer.innerHTML = `<hr>You scored ${score} out of ${MyquizData.length}!`;
+    console.log(score);
   }
   
   function retryQuiz() {
@@ -166,7 +164,9 @@ const MyquizData = [
     submitButton.style.display = 'none';
     retryButton.style.display = 'inline-block';
     showAnswerButton.style.display = 'none';
-  
+    if (incorrectAnswers.length > 6){
+      document.getElementById('result').classList.add("flex-container");
+    }
     let incorrectAnswersHtml = '<br>';
     for (let i = 0; i < incorrectAnswers.length; i++) {
       incorrectAnswersHtml += `

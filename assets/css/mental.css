@@ -25,6 +25,7 @@ body {
   color:#eee
 }
 main{
+  
   display:fixed;
   align-items: center;
   width:100%;
@@ -33,6 +34,12 @@ main{
   display:absolute;
   top: auto;
   bottom:auto;
+  background: url('/assets/images/backgroundquiz.jpg'); 
+  background-size: cover;
+  background-position: 75%;
+  padding: 20px 10% 0 10%;
+  flex-grow: 1;
+  height:100vh;
  } 
   .container {
   position:absolute;
@@ -186,4 +193,13 @@ h1 {
   'wght' 400,
   'GRAD' 0,
   'opsz' 96
+}
+/* added to adjust flex of container */
+.flex-container {
+   display : flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   flex-grow: 1;
+   width:auto;
+   
 }
