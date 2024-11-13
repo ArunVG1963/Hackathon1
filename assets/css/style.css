@@ -109,13 +109,15 @@ nav li {
 }
 /* add css styling for name field */
 #name {
-  color: blueviolet;
+  color: rgb(114, 27, 201);
   position:center;
 
 }
 #nameDiv {
-  background-color: #080707;
+  background-color: #837f7f;
   border:1px #080707;
+  height:auto;
+  width:auto;
 }
 .hiddenDiv {
   display: none;
