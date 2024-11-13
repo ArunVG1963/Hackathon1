@@ -44,3 +44,56 @@ h2 {
 #intro {
   padding-top: 30px;
 }
+
+/* MAIN BODY GAME AREA */
+.game-area {
+  width: 80%;
+  height: fit-content;
+  margin: auto;
+  text-align: center;
+  border-radius: 0.5em;
+  border-style: double;
+  border-width: 10px;
+  border-color: rgb(84, 18, 172);
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(51, 107, 51, 0.7);
+}
+
+#question {
+  margin: 70px 5px 70px 5px;
+  font-size: 2em;
+  font-weight: 900;
+  color: black;
+  position: relative;
+}
+
+.btn {
+  width: 45%;
+  height: fit-content;
+  font-family: inherit;
+  text-transform: capitalize;
+  letter-spacing: 1.2px;
+  margin: 5px 10px;
+  font-size: 1.4em;
+  background-color: #76eede;
+  border-radius: 35px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #990303;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: honeydew;
+}
+
+.btn:hover {
+  outline: 3px solid #4d0000;
+  background-color: #bfc935;
+}
+
+.btn:disabled {
+  color: #000000;
+}
