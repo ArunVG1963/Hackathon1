@@ -197,9 +197,9 @@ h1 {
 /* added to adjust flex of container */
 .flex-container {
    display : flex;
-   flex-direction: row;
+   flex-direction: column;
    flex-wrap: wrap;
    flex-grow: 1;
-   width:auto;
+   width:800px;
    
 }

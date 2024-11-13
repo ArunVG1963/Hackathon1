@@ -164,9 +164,8 @@ const MyquizData = [
     submitButton.style.display = 'none';
     retryButton.style.display = 'inline-block';
     showAnswerButton.style.display = 'none';
-    if (incorrectAnswers.length > 6){
-      document.getElementById('result').classList.add("flex-container");
-    }
+    
+   
     let incorrectAnswersHtml = '<br>';
     for (let i = 0; i < incorrectAnswers.length; i++) {
       incorrectAnswersHtml += `
