@@ -16,7 +16,7 @@
                 integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy"
                 crossorigin="anonymous">
         <title>Quiz Games</title>
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/maciej.css">
         <script src="https://kit.fontawesome.com/2b9bf6fa94.js" crossorigin="anonymous"></script>
 
 
@@ -69,18 +69,22 @@
 
         <main>
 
-
-                <div class="quiz card text-center" style="width: 18rem float-center;">
-                        <div class="card-body ">
-                                <h5 class="card-title" id="questionText"></h5>
+                <div class="quiz-container">
+                        <h1>Stock Market Quiz</h1>
+                        <div id="question-container">
+                          <div id="question"></div>
+                          <div id="answer-buttons" class="btn-group"></div>
+                          <div class="progress">
+                            <div id="progress-bar"></div>
+                          </div>
                         </div>
-                        <ul class="list-group list-group-flush">
-                                <li class="list-group-item answer">Option 1</li>
-                                <li class="list-group-item answer">Option 2</li>
-                                <li class="list-group-item answer">Option 3</li>
-                        </ul>
-                        <div id="score" class="mt-3">Score: 0</div>
-                </div>
+                        <div id="controls">
+                          <button id="next-button" onclick="nextQuestion()">Next</button>
+                        </div>
+                        <div id="score-container">
+                          Score: <span id="score">0</span>/10
+                        </div>
+                      </div>
 
         </main>
 
