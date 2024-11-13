@@ -81,7 +81,7 @@ const MyquizData = [
   
   function displayQuestion() {
     const questionData = MyquizData[currentQuestion];
-  
+   // displayQuestionNo(currentQuestion.toString());
     const questionElement = document.createElement('div');
     questionElement.className = 'question';
     questionElement.innerHTML = questionData.question;
@@ -136,7 +136,10 @@ const MyquizData = [
       }
     }
   }
-  
+  function displayQuestionNo(ANumber){
+    console.log(ANumber);
+    document.getElementById("Qnumber").innerText=`${ANumber}`;
+    }
   function displayResult() {
     quizContainer.style.display = 'none';
     submitButton.style.display = 'none';
