@@ -11,25 +11,32 @@ body {
   width:100%;
   background: url('/assets/images/backgroundquiz.jpg') no-repeat cover; 
   }
- .center {
+/* class to center elements */
+  .center {
     margin: auto;
     width: 100%;
     border: 3px solid #141414;
     padding: 10px;
   }
+ /* background and font-size for header */ 
 #header{
   background-color: rgb(20 20 20);
   font-size: xx-large;
 }
+/* Header colour whiteish */
+
 #header>h1 {
   color:#eee
 }
+/* Main window area after header */
 main{
   
   display:fixed;
   align-items: center;
   width:100%;
   }
+ 
+ /* class for first div container */ 
 .screen1{
   display:absolute;
   top: auto;
@@ -41,6 +48,9 @@ main{
   flex-grow: 1;
   height:100vh;
  } 
+ 
+ /* Main card container class */
+
   .container {
   position:absolute;
   top:20%;
@@ -57,10 +67,26 @@ main{
   
 }
 
+/* footer postioned at bottom of screen */
+
+#footer{
+  background-color:black;
+  height:20px;
+  position: fixed;
+  right:0;
+  bottom:0;
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* align h1 center */
 h1 {
   text-align: center;
 }
 
+/* classes for question from array of objects */
 .question {
   font-weight: bold;
   margin-top: 10px;
@@ -107,18 +133,8 @@ h1 {
 .hide{
   display: none;
 }
+/* format for social element in footer */
 
-#footer{
-  background-color:black;
-  height:20px;
-  position: fixed;
-  right:0;
-  bottom:0;
-  width:100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .socials {
   text-align: center;
   display: flex;
@@ -196,10 +212,7 @@ h1 {
 }
 /* added to adjust flex of container */
 .flex-container {
-   display : flex;
-   flex-direction: column;
-   flex-wrap: wrap;
-   flex-grow: 1;
    width:800px;
+   height:auto;
    
 }
