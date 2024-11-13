@@ -156,6 +156,7 @@ const MyquizData = [
     retryButton.style.display = 'none';
     showAnswerButton.style.display = 'none';
     resultContainer.innerHTML = '';
+    document.getElementById('card1').classList.remove('flex-container');
     displayQuestion();
   }
   
@@ -164,7 +165,7 @@ const MyquizData = [
     submitButton.style.display = 'none';
     retryButton.style.display = 'inline-block';
     showAnswerButton.style.display = 'none';
-    
+    document.getElementById('card1').classList.add('flex-container');
    
     let incorrectAnswersHtml = '<br>';
     for (let i = 0; i < incorrectAnswers.length; i++) {
@@ -192,4 +193,9 @@ const MyquizData = [
   retryButton.addEventListener('click', retryQuiz);
   showAnswerButton.addEventListener('click', showAnswer);
   
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        window.location.href = '/'; // Redirect to the home page
+    }
+});
   displayQuestion();
