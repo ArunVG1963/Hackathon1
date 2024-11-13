@@ -9,7 +9,7 @@ body {
   font-family: 'Poppins', sans-serif;
   height:100vh;
   width:100%;
-  background: url('/assets/images/backgroundquiz.jpg') no-repeat center center/cover; 
+  background: url('/assets/images/backgroundquiz.jpg') no-repeat cover; 
   }
  .center {
     margin: auto;
@@ -25,15 +25,10 @@ body {
   color:#eee
 }
 main{
-  display:flex;
+  display:fixed;
   align-items: center;
-  background: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; 
   width:100%;
-  flex: auto;
-  
-}
+  }
 .screen1{
   display:absolute;
   top: auto;
@@ -41,7 +36,7 @@ main{
  } 
   .container {
   position:absolute;
-  top:50%;
+  top:20%;
   left:35%;
   width: 400px;
   padding: 20px;
@@ -108,10 +103,11 @@ h1 {
 
 #footer{
   background-color:black;
-  height:auto;
-  position: relative;
-  top:90%;
-  bottom:10%;
+  height:20px;
+  position: fixed;
+  right:0;
+  bottom:0;
+  width:100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -140,10 +136,9 @@ h1 {
 
 @media screen and (max-width: 960px) {
   .container {
-    top:40%;
+    top:20%;
     left:35%;
-    display:flex;
-    align-items:center;
+    
 
   }
     .screen1{
@@ -158,8 +153,7 @@ h1 {
     .container {
       top:35%;
       left:20%;
-      display:flex;
-      align-items:center;
+     
     }
     .screen1{
       display:flex;
@@ -185,7 +179,7 @@ h1 {
     width:100%;
 }
   }
-*/
+
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
