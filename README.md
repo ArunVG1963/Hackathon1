@@ -24,7 +24,7 @@ The live project can found here: <a href="https://arunvg1963.github.io/Hackathon
 
 1. Main Page
 
-<img src="assets/images/20241023_132450.jpg">
+<img src="assets/images/mainpage.png">
 
 2. Mental Health (Arun)
 
