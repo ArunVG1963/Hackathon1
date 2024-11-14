@@ -219,7 +219,7 @@ function showScore(){
 
 document.addEventListener('keydown', function(event) {
     if (event.key === 'Escape') {
-        window.location.href = '/'; // Redirect to the home page
+        window.location.href = 'https://arunvg1963.github.io/Hackathon1/'; // Redirect to the home page
     }
 });
 
