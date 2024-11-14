@@ -76,13 +76,13 @@ main {
 
 #footer {
   background-color: black;
-  height: 20px;
+  height: 60px;
   position: fixed;
   right: 0;
   bottom: 0;
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items:center;
   justify-content: center;
 }
 
@@ -169,7 +169,7 @@ h1 {
   .container {
     top: 20%;
     left: 35%;
-
+    right: 35%;
 
   }
 
@@ -177,7 +177,6 @@ h1 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex: auto;
     width: 100%;
   }
 }
@@ -186,6 +185,7 @@ h1 {
   .container {
     top: 35%;
     left: 20%;
+    right: 20%
 
   }
 
@@ -202,6 +202,7 @@ h1 {
   .container {
     top: 25%;
     left: 25%;
+    right:25%;
     display: flex;
     align-items: center;
 
@@ -229,4 +230,14 @@ h1 {
   width: 800px;
   height: auto;
 
+}
+.github-profile-image {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  top:auto;
+  border:1px solid rgb(194, 193, 193);
+  box-shadow: 0px 0px 20px rgb(28, 29, 30);
+  
 }
