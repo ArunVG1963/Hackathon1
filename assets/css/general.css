@@ -12,6 +12,22 @@
     border: 0;
 }
 
+header .navbar-brand {
+  font-size:40px;
+  color:rgb(0, 0, 0);
+  margin:15px;
+  text-shadow: 1px 1px 1px rgb(250, 249, 249);
+}
+.nav-link {
+  color:rgb(0, 0, 0);
+  font-size:20px;
+  text-shadow: 1px 1px 1px rgb(250, 249, 249);
+ }
+ #top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
 body {
     background: url("../images/general.jpg");
     font-family: "Nunito", sans-serif;
@@ -212,6 +228,51 @@ h2 {
     border-width: 2px;
     border-color: darkgreen;
     cursor: pointer;
+}
+
+/* footer */
+
+.navbar-nav {
+  justify-content: space-evenly;
+  flex-direction: row;
+ 
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+nav li {
+  list-style: none;
+  font-size: 35px; 
+  
+}
+
+
+
+
+.github-profile-image {
+  display: inline-block;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border:1px solid rgb(194, 193, 193);
+  box-shadow: 0px 0px 20px rgb(28, 29, 30);
+  
+}
+/* add css styling for name field */
+#name {
+  color: rgb(114, 27, 201);
+  position:center;
+
+}
+#nameDiv {
+  background-color: rgba(98, 94, 211, 0.849);
+  border:1px #080707;
+  height:auto;
+  width:auto;
+  border-radius: 20px;
+}
+.hiddenDiv {
+  display: none;
 }
 
 /* up the screen dead space for devices from 780px of full height to larger devices and monitors */
