@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Chicle&family=Slackey&display=swap');
+
 body {
     margin: 0;
     padding: 0;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:  "Slackey", sans-serif;
     box-sizing: border-box;
     text-align: center;
 }
+
 body, html {
     height: 100%;
 }
+
 .backdrop {
     background-image: url(../images/pinkblackbackdrop.jpg);
     height: 100%;
@@ -16,12 +20,14 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     top: 0;
+    padding-top: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .window {
     background-color: #f1a7d7;
     width: 85%;
     max-width: 626px;
-    margin: 100px auto 0;
+    margin: 0px auto 0;
     border-radius: 10px;
     padding: 30px;
 }
@@ -98,3 +104,32 @@ header .navbar-brand {
     background: url(/assets/images/backgroundquiz.jpg) no-repeat center center/cover;
     font-family: "Slackey", sans-serif;;
    }
+   .navbar-nav {
+    justify-content: space-evenly;
+    flex-direction: row;
+   
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  
+  nav li {
+    list-style: none;
+    font-size: 35px; 
+    
+  }
+  
+  
+  
+  
+  .github-profile-image {
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border:1px solid rgb(194, 193, 193);
+    box-shadow: 0px 0px 20px rgb(28, 29, 30);
+    
+  }
+  .navbar-nav {
+    flex-direction: row;
+  }
