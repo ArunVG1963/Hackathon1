@@ -1,3 +1,5 @@
+
+
 * {  
   margin: 0;
   box-sizing: border-box;
@@ -56,13 +58,17 @@ body {
 
 /* quiz container  */
 .quiz-container {
-  min-width: 300px;
+  width: 500px; 
+  height: 400px; 
   background-color: #c5c7dbe1;
   padding: 20px;
   box-shadow: 0 0 10px rgb(0, 0, 0);
   text-align: center;
-  color: #0a20e0;
+  color: #4f0ccc;
+  overflow-y: auto; 
+  border: 1px solid white;
 }
+
 
 .btn {
   margin: 5px 0;
