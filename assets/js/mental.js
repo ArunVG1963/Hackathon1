@@ -198,4 +198,5 @@ const MyquizData = [
         window.location.href = '/'; // Redirect to the home page
     }
 });
+  console.log('retrieved value: ', window.localStorage.getItem("name"));
   displayQuestion();
