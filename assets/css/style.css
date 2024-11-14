@@ -217,7 +217,7 @@ nav li {
   }
 }
 .form-submission {
-  height: 160px;
+  height: fit-content;
   display: block;
   background-position: center;
   border: #080707, solid, 2px;
@@ -226,4 +226,21 @@ nav li {
   border-radius: 25px;
   padding:5px;
   margin: 10px;
+  width:fit-content;
+}
+#SubmitButtons{
+  margin: 8px;
+}
+input:hover, textarea:hover {
+  background-color: rgb(240, 87, 17);
+  
+}
+input[type=submit], input[type=reset]{
+  background-color: #62529c;
+  border: none;
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
 }

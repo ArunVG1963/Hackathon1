@@ -183,20 +183,21 @@
         <section>
                 <div class="form-submission">
                         <form action="https://formdump.codeinstitute.net" method="POST">
-                                <label for="username">User Name:</label>
-                                <input type="text" name="username" placeholder="Desired Username" />
-                                <label for="password1">password:</label>
+                                <label for="username"><i class="fa-solid fa-user"></i> User Name:</label>
+                                <input type="text" name="username" placeholder="Desired Username" required/>
+                                <label for="password1"><i class="fa-solid fa-lock"></i> password:</label>
                                 <input type="password" name="password1" placeholder="Desired Password" />
                                 <label for="password2">Confirm password:</label>
                                 <input type="password" name="password2" placeholder="Confirm Password" />
+                                <hr>
                                 <p>
-                                <label for="email">Email:</label>
-                                <input type="email" name="email" placeholder="Email Address" />
-                                <label for="birthdate">Date of Birth:</label>
-                                <input type="date" name="birthdate" id="birthdate" />
+                                   <label for="email"><i class="fa-solid fa-envelope"></i> Email:</label>
+                                   <input type="email" name="email" placeholder="Email Address" required/>
+                                   <label for="birthdate"> <i class="fa-solid fa-calendar-days"></i> Date of Birth:</label>
+                                   <input type="date" name="birthdate" id="birthdate" />
                                 </p>
                                 <p>
-                                        <label for="favorite-color">What's your favorite color?</label>
+                                        <label for="favorite-color"> <i class="fa-solid fa-palette"></i> What's your favorite color?</label>
                                         <input type="text" id="favorite-color" list="colors" name="fav-color">
                                         <datalist id="colors">
                                                 <option value="Red"></option>
@@ -211,8 +212,10 @@
                                                 <option value="Teal"></option>
                                         </datalist>
                                 </p>
-                                <input type="submit" value="Register" />
-                                <input type="reset" value="Clear Form" />
+                                <span id="Submitbuttons">
+                                  <input type="submit" value="Register" />
+                                  <input type="reset" value="Clear Form" />
+                                </span>
                         </form>
                 </div>
         </section>
