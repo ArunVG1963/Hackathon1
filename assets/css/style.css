@@ -223,4 +223,7 @@ nav li {
   border: #080707, solid, 2px;
   padding: 20px 0;
   background-color: rgba(98, 94, 211, 0.849);
+  border-radius: 25px;
+  padding:5px;
+  margin: 10px;
 }
