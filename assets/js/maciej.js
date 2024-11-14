@@ -148,5 +148,9 @@ if (currentQuestionIndex < questions.length) {
   progressBar.style.width = "100%"; // Complete progress bar
 }
 }
-
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') {
+      window.location.href = 'https://arunvg1963.github.io/Hackathon1/'; // Redirect to the home page
+  }
+});
 startQuiz();
