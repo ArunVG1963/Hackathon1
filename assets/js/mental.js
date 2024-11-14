@@ -195,7 +195,7 @@ const MyquizData = [
   
   document.addEventListener('keydown', function(event) {
     if (event.key === 'Escape') {
-        window.location.href = 'https://arunvg1963.github.io/Hackathon1/index.html'; // Redirect to the home page
+        window.location.href = 'https://arunvg1963.github.io/Hackathon1/'; // Redirect to the home page
     }
 });
   console.log('retrieved value: ', window.localStorage.getItem("name"));
