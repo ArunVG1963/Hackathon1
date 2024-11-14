@@ -24,7 +24,7 @@ The live project can found here: <a href="https://arunvg1963.github.io/Hackathon
 
 1. Main Page
 
-<img src="assets/images/mainpage.png">
+<img src="assets/images/mainwireframe.png">
 
 2. Mental Health (Arun)
 
@@ -34,11 +34,7 @@ The live project can found here: <a href="https://arunvg1963.github.io/Hackathon
 
 <img src="assets/images/image_360.png">
 
-4. Forex (Maciej)
-
-<img src="assets/images/20241023_132450.jpg">
-
-5. General Knowledge (Madiha)
+4. General Knowledge (Madiha)
 
 <img src="assets/images/wireframegeneral.png">
 
@@ -50,32 +46,56 @@ The live project can found here: <a href="https://arunvg1963.github.io/Hackathon
 site is responsive on all type of devices
 ### Main Page
 
-
-
 <img src="assets/images/mainpage.png">
-
-
-
-
-
-
-
-
-
-
-
-
 
 ### Small Screens View
 
 <img src="assets/images/responsive.png">
 
 
+### Mental Health (Arun)
+
+<img src="assets/images/arunpage.png">
+
+
+<img src="assets/images/arunresp.png">
+
+
+### Music (Joe)
+<img src="assets/images/joe.png">
+
+
+### Forex (Maciej)
+
+<img src="assets/images/maciej.png">
+
+
+<img src="assets/images/maciresp.png">
+
+
+
+### General Knowledge (Madiha)
+<img src="assets/images/madiresp.png">
+
+
+<img src="assets/images/madi.png">
+
+
 ## Color
 Color selection is a key component to any design process, General Knowledge Quiz requires to show bright beautifull colors. The artwork and color selection thus played a integral part in the design of this project as they were essential in creating a welcoming and appropriate page for the end user and their specific needs.
 
+different color pallets were used for all 4 quizzes. 
 
-<img src="assets/images/20241023_132450.jpg">
+
+
+<img src="assets/images/color1.png">
+
+<img src="assets/images/color2.png">
+
+<img src="assets/images/color3.png">
+
+
+
 
 ## Fonts
 
@@ -97,7 +117,7 @@ Within this section buttons are added to present easy navigation options for the
 <img src="assets/images/navbar.png">
 
 ##### Footer
-For the footer Github links were added.
+For the footer Github links and feedback form was added.
 
 <img src="assets/images/footer.png">
 
