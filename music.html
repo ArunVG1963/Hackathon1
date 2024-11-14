@@ -3,10 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/music.css">
     <title>Music Quiz</title>
+    <link rel="stylesheet" href="assets/css/music.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
-    
+    <div id="top">
+    <div class="logo float-center">
+        <a class="navbar-brand" href="index.html">JAMM presents Quiz games!</a>
+</div>
+<ul class="nav justify-content-end">
+        <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Arun.html">Arun</a>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link" href="music.html">Joe</a>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link" href="maciej.html">Maciej</a>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link" href="madiha.html">Madiha</a>
+        </li>
+
+</ul>
+</div>
+    <div class="backdrop">
+        <div class="window">
+            <h1>Think you're a Music Maestro?</h1>
+            <h4>Come test your knowledge.</h4>
+            <div class="quiz">
+                <h3 id="question">question</h3>
+                <div id="answer-buttons">
+                    <button class="option">a</button>
+                    <button class="option">b</button>
+                    <button class="option">c</button>
+                    <button class="option">d</button>
+                </div>
+                <button id="next-question">next</button>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/music.js"></script>
 </body>
 </html>
