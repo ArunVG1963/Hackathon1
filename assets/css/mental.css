@@ -9,7 +9,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   height: 100vh;
-  width: 100%;
+  width: 100%; 
   background: url('/assets/images/backgroundquiz.jpg') no-repeat cover;
 }
 
@@ -35,15 +35,16 @@ body {
 
 /* Main window area after header */
 main {
-
-  display: fixed;
+  
+  display: flex;
   align-items: center;
   width: 100%;
+  justify-content: center;
 }
 
 /* class for first div container */
 .screen1 {
-  display: absolute;
+  display: flex;
   top: auto;
   bottom: auto;
   background: url('/assets/images/backgroundquiz.jpg');
@@ -52,12 +53,13 @@ main {
   padding: 20px 10% 0 10%;
   flex-grow: 1;
   height: 100vh;
+  justify-content: center;
 }
 
 /* Main card container class */
 
 .container {
-  position: absolute;
+ /* position: absolute; */
   top: 20%;
   left: 35%;
   width: 400px;
@@ -170,6 +172,7 @@ h1 {
     top: 20%;
     left: 35%;
     right: 35%;
+    font-size: auto;
 
   }
 
@@ -205,6 +208,7 @@ h1 {
     right:25%;
     display: flex;
     align-items: center;
+    font-size: auto;
 
   }
 
