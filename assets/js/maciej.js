@@ -1,4 +1,4 @@
-// script.js
+
 const questions = [
     {
       question: "What does IPO stand for?",
@@ -51,9 +51,9 @@ const questions = [
     {
       question: "Which company was the first to reach a $1 trillion market cap?",
       answers: [
-        { text: "Amazon", correct: false },
+        { text: "Amazon", correct: true },
         { text: "Microsoft", correct: false },
-        { text: "Apple", correct: true }
+        { text: "Apple", correct: false }
       ]
     },
     {
@@ -82,64 +82,72 @@ const questions = [
     }
   ];
   
-  let currentQuestionIndex = 0;
-  let score = 0;
-  
-  const questionElement = document.getElementById("question");
-  const answerButtonsElement = document.getElementById("answer-buttons");
-  const scoreElement = document.getElementById("score");
-  const progressBar = document.getElementById("progress-bar");
-  
-  function startQuiz() {
-    currentQuestionIndex = 0;
-    score = 0;
+let currentQuestionIndex = 0;
+let score = 0;
+
+const questionElement = document.getElementById("question");
+const answerButtonsElement = document.getElementById("answer-buttons");
+const scoreElement = document.getElementById("score");
+const progressBar = document.getElementById("progress-bar");
+const feedbackElement = document.getElementById("feedback"); 
+
+function startQuiz() {
+  currentQuestionIndex = 0;
+  score = 0;
+  scoreElement.innerText = `0 / ${questions.length}`; 
+  feedbackElement.innerText = ""; 
+  showQuestion(questions[currentQuestionIndex]);
+}
+
+function showQuestion(question) {
+  questionElement.innerText = question.question;
+  answerButtonsElement.innerHTML = "";
+  feedbackElement.innerText = ""; 
+  question.answers.forEach(answer => {
+    const button = document.createElement("button");
+    button.innerText = answer.text;
+    button.classList.add("btn");
+    if (answer.correct) {
+      button.dataset.correct = answer.correct;
+    }
+    button.addEventListener("click", selectAnswer);
+    answerButtonsElement.appendChild(button);
+  });
+  updateProgressBar();
+}
+
+function updateProgressBar() {
+  const progress = ((currentQuestionIndex + 1) / questions.length) * 100;
+  progressBar.style.width = progress + "%";
+}
+
+function selectAnswer(e) {
+  const selectedButton = e.target;
+  const correct = selectedButton.dataset.correct === "true";
+  if (correct) {
+    score++;
     scoreElement.innerText = score;
+    feedbackElement.innerText = "Well done!"; 
+  } else {
+    feedbackElement.innerText = "It might be helpful to explore this further."; 
+  }
+  Array.from(answerButtonsElement.children).forEach(button => {
+    button.classList.add(button.dataset.correct ? "correct" : "wrong");
+  });
+  setTimeout(nextQuestion, 1000); // Brief delay to show feedback before the next question
+}
+
+function nextQuestion() {
+  currentQuestionIndex++;
+  if (currentQuestionIndex < questions.length) {
     showQuestion(questions[currentQuestionIndex]);
+  } else {
+    feedbackElement.innerText = `Quiz finished! Your score: ${score}/${questions.length}`;
+    questionElement.innerText = ""; // Clear question text
+    answerButtonsElement.innerHTML = ""; // Clear answer buttons
+    progressBar.style.width = "100%"; // Complete progress bar
   }
-  
-  function showQuestion(question) {
-    questionElement.innerText = question.question;
-    answerButtonsElement.innerHTML = "";
-    question.answers.forEach(answer => {
-      const button = document.createElement("button");
-      button.innerText = answer.text;
-      button.classList.add("btn");
-      if (answer.correct) {
-        button.dataset.correct = answer.correct;
-      }
-      button.addEventListener("click", selectAnswer);
-      answerButtonsElement.appendChild(button);
-    });
-    updateProgressBar();
-  }
-  
-  function updateProgressBar() {
-    const progress = ((currentQuestionIndex + 1) / questions.length) * 100;
-    progressBar.style.width = progress + "%";
-  }
-  
-  function selectAnswer(e) {
-    const selectedButton = e.target;
-    const correct = selectedButton.dataset.correct === "true";
-    if (correct) {
-      score++;
-      scoreElement.innerText = score;
-    }
-    Array.from(answerButtonsElement.children).forEach(button => {
-      button.classList.add(button.dataset.correct ? "correct" : "wrong");
-    });
-    setTimeout(nextQuestion, 10000);
-  }
-  
-  function nextQuestion() {
-    currentQuestionIndex++;
-    if (currentQuestionIndex < questions.length) {
-      showQuestion(questions[currentQuestionIndex]);
-    } else {
-      alert(`Quiz finished! Your score: ${score}/${questions.length}`);
-      startQuiz();
-    }
-  }
-  
-  startQuiz();
+}
+
+startQuiz();
   
