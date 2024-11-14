@@ -145,6 +145,13 @@ GitHub was used to deploy the website. These were the steps taken to acheive thi
 6. Select 'root' from the drop-down folder menu
 7. Click 'Save' and after a few moments the project will have been made live and a link is visible at the top of the page
 
+### Issues encountered and resolved after debugging
+
+1. Website was not responsive at small screens, issue was occured due to incorrect media queries that was resolved after deep review.
+2. Header was not fixed and at other pages of website it was not at proper location. Issue was fixed after changing styling and recoding.
+3. Javascript event for "esc" key was not working at one of the quiz, it was resolved after checking the JS file and linkiing it with the event listener key.
+
+
 ## Validators
 
 1. HTML
