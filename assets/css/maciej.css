@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Rubik+Moonrocks&display=swap');
 
 * {  
   margin: 0;
@@ -7,9 +7,12 @@
 }
 
 .navbar-brand {
-  color: rgb(187, 11, 11);
+  color: rgb(11, 11, 12);
   margin: 30px;
-  text-shadow: 1px 1px 1px rgb(250, 249, 249);  
+  text-shadow: 2px 2px 2px rgb(248, 142, 2);  
+  font-family: "Rubik Moonrocks", sans-serif;
+  font-weight: 600;
+  
 
   
 }
@@ -23,6 +26,7 @@
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 20px;
+  font-family: "DynaPuff", system-ui;
   
   
 }
@@ -35,10 +39,12 @@ p {
 .nav-link {
   color: rgb(245, 1, 1);
   text-shadow: 1px 1px 1px rgb(250, 249, 249);
+  
 }
 
 .nav-link.active {
-  color: rgb(40, 187, 11); 
+  color: rgb(5, 231, 24); 
+  font-size: 30px;
  
 }
 
@@ -53,7 +59,11 @@ body {
   height: 100%; 
 }
 
-
+#question {
+  font-size: 30px;
+  text-shadow: 1px 1px 1px rgb(250, 249, 249);
+  color: #020202;
+}
 
 
 /* quiz container  */
@@ -67,6 +77,7 @@ body {
   color: #4f0ccc;
   overflow-y: auto; 
   border: 1px solid white;
+  font-family: "DynaPuff", system-ui;
 }
 
 
@@ -156,7 +167,6 @@ nav li {
   transition: transform 0.2s;
 }
 
-/* Media Queries */
 @media (min-width: 576px) and (max-width: 768px) {
   header .navbar-brand {
       font-size: 30px;
@@ -165,8 +175,12 @@ nav li {
       font-size: 16px;
   }
   .hero {
-      font-size: 18px;
-      padding: 15px;
+      
+      padding: 10px;    /* Reduce padding for a better fit */
+  }
+  p {
+    font-size:15px;
+    
   }
 }
 
@@ -179,7 +193,8 @@ nav li {
       padding: 8px;
   }
   .hero {
-      font-size: 22px;
+      font-size: 18px;  /* Adjust font size */
+      padding: 15px;    /* Adjust padding for medium screens */
   }
 }
 
@@ -192,7 +207,8 @@ nav li {
       padding: 10px;
   }
   .hero {
-      font-size: 24px;
+      font-size: 20px;  /* Adjust font size */
+      padding: 20px;    /* Adjust padding */
   }
 }
 
@@ -204,6 +220,7 @@ nav li {
       font-size: 20px;
   }
   .hero {
-      font-size: 26px;
+      font-size: 26px;  /* Keep it large for bigger screens */
+      padding: 25px;    /* Adequate padding for larger screens */
   }
 }
