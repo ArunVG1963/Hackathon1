@@ -48,7 +48,7 @@ header .navbar-brand {
 
 body {
   min-height: 100vh;
-  background: url(/assets/images/backgroundquiz.jpg) no-repeat center center/cover; 
+  background: url(../images/backgroundquiz.jpg) no-repeat center center/cover; 
 }
 
 
