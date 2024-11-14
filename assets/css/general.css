@@ -14,17 +14,17 @@
 
 header .navbar-brand {
   font-size:40px;
-  color:rgb(0, 0, 0);
+  color:rgba(51, 107, 51, 0.7);
   margin:15px;
   text-shadow: 1px 1px 1px rgb(250, 249, 249);
 }
 .nav-link {
-  color:rgb(0, 0, 0);
+  color:rgba(51, 107, 51, 0.7);
   font-size:20px;
   text-shadow: 1px 1px 1px rgb(250, 249, 249);
  }
  #header{
-    background-color: rgb(20 20 20);
+    background-color: rgba(51, 107, 51, 0.7);
     font-size: xx-large;
   }
   #header>h1 {
@@ -249,7 +249,7 @@ h2 {
 
 nav li {
   list-style: none;
-  font-size: 35px; 
+  font-size: 30px; 
   
 }
 
