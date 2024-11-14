@@ -167,7 +167,6 @@ nav li {
   transition: transform 0.2s;
 }
 
-/* Media Queries */
 @media (min-width: 576px) and (max-width: 768px) {
   header .navbar-brand {
       font-size: 30px;
@@ -176,8 +175,12 @@ nav li {
       font-size: 16px;
   }
   .hero {
-      font-size: 18px;
-      padding: 15px;
+      
+      padding: 10px;    /* Reduce padding for a better fit */
+  }
+  p {
+    font-size:15px;
+    
   }
 }
 
@@ -190,7 +193,8 @@ nav li {
       padding: 8px;
   }
   .hero {
-      font-size: 22px;
+      font-size: 18px;  /* Adjust font size */
+      padding: 15px;    /* Adjust padding for medium screens */
   }
 }
 
@@ -203,7 +207,8 @@ nav li {
       padding: 10px;
   }
   .hero {
-      font-size: 24px;
+      font-size: 20px;  /* Adjust font size */
+      padding: 20px;    /* Adjust padding */
   }
 }
 
@@ -215,6 +220,7 @@ nav li {
       font-size: 20px;
   }
   .hero {
-      font-size: 26px;
+      font-size: 26px;  /* Keep it large for bigger screens */
+      padding: 25px;    /* Adequate padding for larger screens */
   }
 }
