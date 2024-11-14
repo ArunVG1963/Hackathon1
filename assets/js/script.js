@@ -12,5 +12,8 @@ function DisplayNameText() {
     console.log(nameEntered.value);
     namePlaceholder.innerText = `Welcome to your Quiz ${nameEntered.value}`;
     document.getElementById("nameDiv").classList.add("hiddenDiv");
+    console.log('value saved in ls:', nameEntered.value);
+    window.localStorage.setItem("name", `${nameEntered.value}`);
+      
     }
 }

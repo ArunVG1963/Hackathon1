@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&family=Barlow:wght@300&family=Lato:wght@300&family=Merriweather&family=Oswald&family=PT+Sans+Caption&family=Playfair+Display&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -7,75 +8,79 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  height:100vh;
-  width:100%;
-  background: url('/assets/images/backgroundquiz.jpg') no-repeat cover; 
-  }
+  height: 100vh;
+  width: 100%;
+  background: url('/assets/images/backgroundquiz.jpg') no-repeat cover;
+}
+
 /* class to center elements */
-  .center {
-    margin: auto;
-    width: 100%;
-    border: 3px solid #141414;
-    padding: 10px;
-  }
- /* background and font-size for header */ 
-#header{
+.center {
+  margin: auto;
+  width: 100%;
+  border: 3px solid #141414;
+  padding: 10px;
+}
+
+/* background and font-size for header */
+#header {
   background-color: rgb(20 20 20);
   font-size: xx-large;
 }
+
 /* Header colour whiteish */
 
 #header>h1 {
-  color:#eee
+  color: #eee
 }
+
 /* Main window area after header */
-main{
-  
-  display:fixed;
+main {
+
+  display: fixed;
   align-items: center;
-  width:100%;
-  }
- 
- /* class for first div container */ 
-.screen1{
-  display:absolute;
+  width: 100%;
+}
+
+/* class for first div container */
+.screen1 {
+  display: absolute;
   top: auto;
-  bottom:auto;
-  background: url('/assets/images/backgroundquiz.jpg'); 
+  bottom: auto;
+  background: url('/assets/images/backgroundquiz.jpg');
   background-size: cover;
   background-position: 75%;
   padding: 20px 10% 0 10%;
   flex-grow: 1;
-  height:100vh;
- } 
- 
- /* Main card container class */
+  height: 100vh;
+}
 
-  .container {
-  position:absolute;
-  top:20%;
-  left:35%;
+/* Main card container class */
+
+.container {
+  position: absolute;
+  top: 20%;
+  left: 35%;
   width: 400px;
   padding: 20px;
- /* margin-top: 180px;
+  /* margin-top: 180px;
   margin-left: 350px; */
   box-shadow: 1 2px 4px rgb(113 19 26 / 95%);
   border-radius: 20px;
-  background: rgb(238,174,202);
-  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-  
-  
+  background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+
+
 }
 
 /* footer postioned at bottom of screen */
 
-#footer{
-  background-color:black;
-  height:20px;
+#footer {
+  background-color: black;
+  height: 20px;
   position: fixed;
-  right:0;
-  bottom:0;
-  width:100%;
+  right: 0;
+  bottom: 0;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -91,7 +96,7 @@ h1 {
   font-weight: bold;
   margin-top: 10px;
   margin-bottom: 10px;
-  text-align:center;
+  text-align: center;
 }
 
 .options {
@@ -102,11 +107,13 @@ h1 {
 .option {
   display: block;
   margin-bottom: 10px;
-  margin-left:10px;
+  margin-left: 10px;
 }
+
 .option label {
-    margin-left:20px;
+  margin-left: 20px;
 }
+
 .button {
   display: inline-block;
   padding: 10px 20px;
@@ -130,9 +137,10 @@ h1 {
   font-weight: bold;
 }
 
-.hide{
+.hide {
   display: none;
 }
+
 /* format for social element in footer */
 
 .socials {
@@ -159,60 +167,66 @@ h1 {
 
 @media screen and (max-width: 960px) {
   .container {
-    top:20%;
-    left:35%;
-    
+    top: 20%;
+    left: 35%;
+
 
   }
-    .screen1{
-      display:flex;
-      flex-direction: row;
-      align-items: center;
-      flex : auto;
-      width:100%;
-  }
-}
-  @media screen and (max-width: 600px) {
-    .container {
-      top:35%;
-      left:20%;
-     
-    }
-    .screen1{
-      display:flex;
-      flex-direction: row;
-      align-items: center;
-      flex : auto;
-      width:100%;
-  }
-  }
-  @media screen and (max-width: 375px) {
-    .container {
-      top:25%;
-      left:25%;
-      display:flex;
-      align-items: center;
-      
-  }
-  .screen1{
-    display:flex;
+
+  .screen1 {
+    display: flex;
     flex-direction: row;
     align-items: center;
-    flex : auto;
-    width:100%;
-}
+    flex: auto;
+    width: 100%;
   }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    top: 35%;
+    left: 20%;
+
+  }
+
+  .screen1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: auto;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    top: 25%;
+    left: 25%;
+    display: flex;
+    align-items: center;
+
+  }
+
+  .screen1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: auto;
+    width: 100%;
+  }
+}
 
 .material-symbols-outlined {
   font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 96
+    'FILL'0,
+    'wght'400,
+    'GRAD'0,
+    'opsz'96
 }
+
 /* added to adjust flex of container */
 .flex-container {
-   width:800px;
-   height:auto;
-   
+  width: 800px;
+  height: auto;
+
 }
