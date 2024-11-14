@@ -134,6 +134,12 @@ https://validator.w3.org/nu/#textarea
 <img src="assets/images/htmltest.png">
 
 
+
+2. CSS
+
+<img src="assets/images/cssgeneral.png">
+
+
 ## Acknowledgements
 1. We would like to acknowledge our Code Institute facilitator, Vasi Pavaloi, for his supporting presence and advice.
 2. We are gratefull for our coding coach "John Rearden" and SME "Mark Briscoe" for help, generoisty and support.
