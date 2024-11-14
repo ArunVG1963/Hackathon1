@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Rubik+Moonrocks&display=swap');
 
 * {  
   margin: 0;
@@ -7,9 +7,12 @@
 }
 
 .navbar-brand {
-  color: rgb(187, 11, 11);
+  color: rgb(11, 11, 12);
   margin: 30px;
-  text-shadow: 1px 1px 1px rgb(250, 249, 249);  
+  text-shadow: 2px 2px 2px rgb(248, 142, 2);  
+  font-family: "Rubik Moonrocks", sans-serif;
+  font-weight: 600;
+  
 
   
 }
@@ -23,6 +26,7 @@
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 20px;
+  font-family: "DynaPuff", system-ui;
   
   
 }
@@ -35,10 +39,12 @@ p {
 .nav-link {
   color: rgb(245, 1, 1);
   text-shadow: 1px 1px 1px rgb(250, 249, 249);
+  
 }
 
 .nav-link.active {
-  color: rgb(40, 187, 11); 
+  color: rgb(5, 231, 24); 
+  font-size: 30px;
  
 }
 
@@ -53,7 +59,11 @@ body {
   height: 100%; 
 }
 
-
+#question {
+  font-size: 30px;
+  text-shadow: 1px 1px 1px rgb(250, 249, 249);
+  color: #020202;
+}
 
 
 /* quiz container  */
@@ -67,6 +77,7 @@ body {
   color: #4f0ccc;
   overflow-y: auto; 
   border: 1px solid white;
+  font-family: "DynaPuff", system-ui;
 }
 
 
