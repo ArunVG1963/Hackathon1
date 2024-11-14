@@ -33,29 +33,35 @@
 
 <body>
         <header>
-                <div class="logo">
-                        <a class="navbar-brand" href="index.html">Quiz geames!</a>
+                <div class="logo float-center">
+                        <a class="navbar-brand" href="index.html">JAMM presents Quiz games!</a>
                 </div>
                 <ul class="nav justify-content-end">
                         <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="Arun.html">Arun</a>
+                                <a class="nav-link active" aria-current="page" href="arun.html">Arun</a>
                         </li>
                         <li class="nav-item">
-                                <a class="nav-link" href="Joe.html">Joe</a>
+                                <a class="nav-link" href="joe.html">Joe</a>
                         </li>
                         <li class="nav-item">
-                                <a class="nav-link" href="Maciej.html">Maciej</a>
+                                <a class="nav-link" href="maciej.html">Maciej</a>
                         </li>
                         <li class="nav-item">
-                                <a class="nav-link" href="Madiha.html">Madiha</a>
+                                <a class="nav-link" href="madiha.html">Madiha</a>
                         </li>
 
                 </ul>
                 <section id="top">
                         <div class="hero">
+                                <!-- /* Input name of person */ -->
+                                <div class="float-center mt-5 me-2 ms-2 mb-5 p-5 text-center" id="nameDiv">
+                                        <label for="name"> Name:</label>
+                                        <input type="text" id="name" required>
+                                        <a href="#" id="nameBtn" class="btn btn-primary" >Click Me</a>
+                                </div>
                                 <div class="float-center mt-5 me-2 ms-2 mb-5 p-5 text-center bg-transparent">
 
                                         <div>
@@ -63,6 +69,7 @@
                                                         fun, and maybe even learn something new. Let’s see how many you
                                                         can get right – good luck, and enjoy the game!</p>
                                         </div>
+                                        |<div class="hiddenDiv" id="NameText"></div>
                                 </div>
                         </div>
 
@@ -102,7 +109,8 @@
                                                         hic
                                                         adipisci, minus ea aut officiis!</p>
 
-                                                <a href="arun.html" class="btn btn-primary" target="_blank">Let's
+
+                                                <a href="Arun.html" class="btn btn-primary" target="_blank">Let's
                                                         play!</a>
                                         </div>
 
@@ -193,35 +201,38 @@
 
 
 
-
-
-
         <footer>
-                <nav class="nav bg-transparent">
-                        <div class="container-fluid " id="social-networks">
-                                <ul class="navbar-nav">
-                                        <li><a href="https://www.linkedin.com/" target="_blank" class="github"
-                                                        rel="noopener" aria-label="github"><i
-                                                                class="fa-brands fa-github"></i></a></li>
-                                        <li><a href="https://x.com/your-handle" target="_blank" class="github"
-                                                        rel="noopener" aria-label="Find more on X "><i
-                                                                class="fa-brands fa-github"></i></a></li>
-                                        <li><a href="https://github.com/ender805" target="_blank" class="github"
-                                                        rel="noopener" aria-label="Find more project on Github"><i
-                                                                class="fa-brands fa-github"></i></a></li>
-                                        <li><a href="https://drive.google.com/drive" target="_blank" class="github"
-                                                        rel="noopener" aria-label="Google drive"><i
-                                                                class="fa-brands fa-github"></i></a></li>
-                                </ul>
-
-
-                        </div>
-                </nav>
+                
+    <div class="container-fluid" id="social-networks">
+        <ul class="navbar-nav">
+            <li>
+                <a href="https://github.com/ArunVG1963" target="_blank" class="github" rel="noopener" aria-label="Find more projects on GitHub">
+                    <img src="https://avatars.githubusercontent.com/u/182501234?v=4" alt="My GitHub Profile" class="github-profile-image">
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/joeht112" target="_blank" class="github" rel="noopener" aria-label="Find more on X">
+                        <img src="https://avatars.githubusercontent.com/u/185714489?v=4" alt="My GitHub Profile" class="github-profile-image">
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/ender805" target="_blank" class="github" rel="noopener" aria-label="Find more projects on GitHub">
+                        <img src="https://avatars.githubusercontent.com/u/183707062?v=4" alt="My GitHub Profile" class="github-profile-image">
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/Madiha-babri" target="_blank" class="github" rel="noopener" aria-label="Google Drive">
+                        <img src="https://avatars.githubusercontent.com/u/184502331?v=4" alt="My GitHub Profile" class="github-profile-image">
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
 
         </footer>
 
-
+        <script src="assets/js/script.js"></script>
 
 
 

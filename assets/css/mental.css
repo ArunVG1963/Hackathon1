@@ -1,43 +1,124 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&family=Barlow:wght@300&family=Lato:wght@300&family=Merriweather&family=Oswald&family=PT+Sans+Caption&family=Playfair+Display&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 * {
   margin: 0;
   padding: 0;
 }
-/* style for body and footer */
-html,
-body {
-  height: 100%;
-}
 
 body {
-  background-color: #a3d5fc;
-  background-image: url('../images/mental-health-logo-design-template-1cb8bc2ea114233591fc2d620a13047e_screen.jpg');
-  background-position: auto;
-  width: auto;
+  font-family: 'Poppins', sans-serif;
+  height:100vh;
+  width:100%;
+  background: url('/assets/images/backgroundquiz.jpg') no-repeat cover; 
+  }
+ .center {
+    margin: auto;
+    width: 100%;
+    border: 3px solid #141414;
+    padding: 10px;
+  }
+#header{
+  background-color: rgb(20 20 20);
+  font-size: xx-large;
+}
+#header>h1 {
+  color:#eee
+}
+main{
+  
+  display:fixed;
+  align-items: center;
+  width:100%;
+  }
+.screen1{
+  display:absolute;
+  top: auto;
+  bottom:auto;
+  background: url('/assets/images/backgroundquiz.jpg'); 
   background-size: cover;
-  background-attachment: fixed;
+  background-position: 75%;
+  padding: 20px 10% 0 10%;
+  flex-grow: 1;
+  height:100vh;
+ } 
+  .container {
+  position:absolute;
+  top:20%;
+  left:35%;
+  width: 400px;
+  padding: 20px;
+ /* margin-top: 180px;
+  margin-left: 350px; */
+  box-shadow: 1 2px 4px rgb(113 19 26 / 95%);
+  border-radius: 20px;
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  
+  
 }
 
-body > footer {
-  position: sticky;
-  top: 120vh;
+h1 {
+  text-align: center;
 }
 
-/* logo */
-#logo {
-  font-family: Merriweather, sans-serif;
-  font-size: 65px;
-  color: rgb(27, 24, 24);
+.question {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align:center;
+}
+
+.options {
+  margin-bottom: 20px;
   text-align: left;
-  padding-bottom: 50px;
-  padding-left: 80px;
-  z-index: -1;
 }
 
-#footer {
-    background-color: black;
+.option {
+  display: block;
+  margin-bottom: 10px;
+  margin-left:10px;
 }
-/* CSS for welcome page */
+.option label {
+    margin-left:20px;
+}
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #800930;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+}
+
+.button:hover {
+  background-color: #3071a9;
+}
+
+.result {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.hide{
+  display: none;
+}
+
+#footer{
+  background-color:black;
+  height:20px;
+  position: fixed;
+  right:0;
+  bottom:0;
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .socials {
   text-align: center;
   display: flex;
@@ -52,7 +133,7 @@ body > footer {
 /* style for social icons */
 .socials li a {
   text-decoration: none;
-  color: #3a7cae;
+  color: #1b89dc;
 }
 
 .socials li a i {
@@ -60,202 +141,65 @@ body > footer {
   margin-top: 20px;
 }
 
-.container {
-  position: relative;
-  color: rgb(181, 6, 6);
-  text-align: left;
-}
-
-/* intro */
-#intro {
-  padding-top: 30px;
-}
-
-#intro ul {
-  padding: 1em;
-  max-width: 50%;
-  
-}
-
-#intro ul li {
-  font-family: Merriweather, sans-serif;
-  text-align: left;
-  font-size: 22px;
-}
-
-.li1 {
-  color: #0b0c0c;
-  padding-bottom: 30px;
-}
-
-.li2 {
-  color: rgb(24, 23, 23);
-  padding-bottom: 30px;
-}
-
-.li3 {
-  color: rgb(15, 14, 14);
-}
-
-/* about game section */
-#about-game {
-  font-family: Merriweather, sans-serif;
-  text-align: center;
-  font-size: 35px;
-  color: rgb(168, 18, 18);
-  margin: 3% auto;
-}
-
-/* start button styling */
-#start-button:hover {
-  transform: scale(1.3);
-}
-
-#start-button {
-  border: 2px outset silver;
-  text-align: center;
-  font-size: 90%;
-  background-color: rgb(198, 4, 4);
-  color: white;
-  font-weight: 550;
-  border-radius: 50px;
-  padding: 15px 32px 15px 32px;
-  margin: 0 auto;
-  transition: 0.5s ease-in-out all;
-  display: flex;
-  justify-content: center;
-}
-
-/* CSS for questions and answers */
-
-#question {
-  color: silver;
-  align-items: center;
-  font-size: 25px;
-  margin-left: 5%;
-  margin-top: 20%;
-}
-
-#qbuttons {
-  text-align: center;
-  margin: auto;
-  padding-bottom: 5%;
-  padding-top: 10%;
-}
-
-.btn {
-  width: 40%;
-  height: 50px;
-  color: navy;
-  background-color: rgb(228, 224, 224);
-  text-align: center;
-  font-family: Merriweather, sans-serif;
-  display: inline-block;
-  margin: 10px;
-  font-weight: 100;
-  font-size: 15px;
-  position: relative;
-  border-radius: 25px 0 25px 0;
-}
-
-.btn:hover {
-  box-shadow: 0px 5px 15px 0 rgb(198, 4, 4) inset,
-    0px 5px 15px 0 rgb(198, 4, 4) inset;
-}
-
-.btn:active {
-  box-shadow: 0px 5px 15px 0 rgb(198, 4, 4) inset;
-  transform: translateY(2px);
-}
-
-
-/* restart button styling */
-#restart-button:hover {
-  transform: scale(1.3);
-}
-
-#restart-button {
-  border: 2px outset silver;
-  text-align: center;
-  font-size: 90%;
-  background-color: rgb(198, 4, 4);
-  color: white;
-  border-radius: 50px;
-  padding: 15px 32px 15px 32px;
-  margin: 0 auto;
-  margin-top: 5%;
-  margin-bottom: 8%;
-  transition: 0.5s ease-in-out all;
-  display: flex;
-  justify-content: center;
-}
-
-/* results styling */
-#results {
-  text-align: center;
-  background-image: url("../images/result-background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: right center;
-  max-width: 70%;
-  margin-top: 2em;
-}
-
-#final-result {
-  padding: 1em;
-  font-size: 25px;
-  color: white;
-  text-align: center;
-  width: 85%;
-  margin: 0 auto;
-}
-
-.hide {
-  display: none !important;
-}
-
-/* media screen sizes 960 and below */
 @media screen and (max-width: 960px) {
-  #logo img {
-    width: 70%;
-    height: auto;
-  }
+  .container {
+    top:20%;
+    left:35%;
+    
 
-  #intro {
-    clear: left;
-    text-align: center;
   }
-
-  #start-button {
-    text-align: center;
-  }
-
-  #question {
-    text-align: center;
-  }
-
-  .btn {
-    width: 90%;
-    text-align: center;
-  }
-
-  #results {
-    max-width: 80%;
-  }
-
-  #intro ul {
-    background-color: rgb(8, 22, 33, 0.85);
-    max-width: 100%;
+    .screen1{
+      display:flex;
+      flex-direction: row;
+      align-items: center;
+      flex : auto;
+      width:100%;
   }
 }
-
-@media screen and (max-width: 800px) {
-  #intro {
-    padding-top: 0;
+  @media screen and (max-width: 600px) {
+    .container {
+      top:35%;
+      left:20%;
+     
+    }
+    .screen1{
+      display:flex;
+      flex-direction: row;
+      align-items: center;
+      flex : auto;
+      width:100%;
+  }
+  }
+  @media screen and (max-width: 375px) {
+    .container {
+      top:25%;
+      left:25%;
+      display:flex;
+      align-items: center;
+      
+  }
+  .screen1{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    flex : auto;
+    width:100%;
+}
   }
 
-  #results {
-    max-width: 100%;
-    background-position: center center;
-  }
-} 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 96
+}
+/* added to adjust flex of container */
+.flex-container {
+   display : flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   flex-grow: 1;
+   width:auto;
+   
+}

@@ -16,7 +16,7 @@
                 integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy"
                 crossorigin="anonymous">
         <title>Quiz Games</title>
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/maciej.css">
         <script src="https://kit.fontawesome.com/2b9bf6fa94.js" crossorigin="anonymous"></script>
 
 
@@ -33,16 +33,16 @@
                                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="Arun.html">Arun</a>
+                                <a class="nav-link active" aria-current="page" href="arun.html">Arun</a>
                         </li>
                         <li class="nav-item">
-                                <a class="nav-link" href="Joe.html">Joe</a>
+                                <a class="nav-link" href="joe.html">Joe</a>
                         </li>
                         <li class="nav-item">
-                                <a class="nav-link" href="Maciej.html">Maciej</a>
+                                <a class="nav-link" href="maciej.html">Maciej</a>
                         </li>
                         <li class="nav-item">
-                                <a class="nav-link" href="Madiha.html">Madiha</a>
+                                <a class="nav-link" href="madiha.html">Madiha</a>
                         </li>
 
                 </ul>
@@ -69,35 +69,22 @@
 
         <main>
 
-                <div class="card  text-center" style="width: 18rem float-center text-center;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body ">
-                                <h5 class="card-title">Question 1</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
-                                        elit. Itaque
-                                        corporis officiis error fugit est optio temporibus corrupti aliquid, veritatis
-                                        dolor?</p>
+                <div class="quiz-container">
+                        <h1>Stock Market Quiz</h1>
+                        <div id="question-container">
+                          <div id="question"></div>
+                          <div id="answer-buttons" class="btn-group"></div>
+                          <div class="progress">
+                            <div id="progress-bar"></div>
+                          </div>
                         </div>
-                        <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Answer A
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, omnis.
-                                        </p>
-                                </li>
-                                <li class="list-group-item">Answer B
-                                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quos commodi
-                                                aspernatur, ex mollitia rerum soluta maiores repellat consequuntur.
-                                                Ullam.</p>
-                                </li>
-                                <li class="list-group-item">Answer C
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat deleniti
-                                                delectus, dolores optio maxime aspernatur?</p>
-                                </li>
-                        </ul>
-                        <div class="card-body">
-                                <a href="#" class="card-link">True</a>
-                                <a href="#" class="card-link">False</a>
+                        <div id="controls">
+                          <button id="next-button" onclick="nextQuestion()">Next</button>
                         </div>
-                </div>
+                        <div id="score-container">
+                          Score: <span id="score">0</span>/10
+                        </div>
+                      </div>
 
         </main>
 
@@ -107,34 +94,26 @@
 
 
         <footer>
-                <nav class="nav bg-transparent">
-                        <div class="container-fluid " id="social-networks">
-                                <ul class="navbar-nav">
-                                        <li><a href="https://www.linkedin.com/" target="_blank" class="github"
-                                                        rel="noopener" aria-label="github"><i
-                                                                class="fa-brands fa-github"></i></a></li>
-                                        <li><a href="https://x.com/your-handle" target="_blank" class="github"
-                                                        rel="noopener" aria-label="Find more on X "><i
-                                                                class="fa-brands fa-github"></i></a></li>
-                                        <li><a href="https://github.com/ender805" target="_blank" class="github"
-                                                        rel="noopener" aria-label="Find more project on Github"><i
-                                                                class="fa-brands fa-github"></i></a></li>
-                                        <li><a href="https://drive.google.com/drive" target="_blank" class="github"
-                                                        rel="noopener" aria-label="Google drive"><i
-                                                                class="fa-brands fa-github"></i></a></li>
-                                </ul>
+               <nav class="nav bg-transparent">
+    <div class="container-fluid" id="social-networks">
+        <ul class="navbar-nav">
+            
+            <li>
+                <a href="https://github.com/ender805" target="_blank" class="github" rel="noopener" aria-label="Find more projects on GitHub">
+                        <img src="https://avatars.githubusercontent.com/u/183707062?v=4" alt="My GitHub Profile" class="github-profile-image">
+                </a>
+            </li>
+           
+        </ul>
+    </div>
+</nav>
 
-
-                        </div>
-                </nav>
-
-
+                <script src="assets/js/maciej.js"></script>
         </footer>
 
 
-
-
-
+    
 
 
 </html>
+
