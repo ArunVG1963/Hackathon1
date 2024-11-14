@@ -23,13 +23,7 @@ header .navbar-brand {
   font-size:20px;
   text-shadow: 1px 1px 1px rgb(250, 249, 249);
  }
- #header{
-    background-color: rgba(51, 107, 51, 0.7);
-    font-size: xx-large;
-  }
-  #header>h1 {
-    color:#eee
-  }
+ 
  #top {
   display: flex;
   justify-content: center;
