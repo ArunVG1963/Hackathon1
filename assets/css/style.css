@@ -232,16 +232,33 @@ nav li {
 #SubmitButtons{
   margin: 8px;
 }
+
 input:hover, textarea:hover {
-  background-color: rgb(240, 87, 17);
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,0.75) 0%, rgba(253,29,29,.75) 50%, rgba(252,176,69,.75) 100%);
+  border-radius: 6px;
   
 }
+input[type=text],input[type=email],input[type=password] {
+  border: 1px black;
+  border-radius: 5px;
+  color: #faec30;
+  background-color: #080707;
+}
 input[type=submit], input[type=reset]{
-  background-color: #62529c;
-  border: none;
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  border: 1px black;
+  border-radius: 5px;
   color: #fff;
   padding: 15px 30px;
   text-decoration: none;
   margin: 4px 2px;
   cursor: pointer;
+}
+
+#formParent {
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }

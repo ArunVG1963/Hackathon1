@@ -87,7 +87,8 @@ main {
   width: 100%;
   display: flex;
   align-items:center;
-  justify-content: center;
+  justify-content: space-evenly;
+  flex-direction:row;
 }
 
 /* align h1 center */
@@ -149,9 +150,7 @@ h1 {
 
 .socials {
   text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  display:flex;
   font-size: 40px;
   color: #3a7cae;
   list-style: none;
