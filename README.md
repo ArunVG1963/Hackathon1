@@ -1,7 +1,7 @@
 # Quiz Games
 This project is a part of Hackathon1. Members of this team developed together 4 different type of Quiz which you can select according to your mood and requirement. Mental Health, Music, Forex and General Knowledge quiz. Quiz Games is a first hackathone project developed as part of the Code Institute Full Stack Software Developer Bootcamp, consisting of learning outcomes to utilise HTML5, CSS3 & Bootstrap and agile methodology in order to fulfil the necessary requirements.
 
-<img src="assets/images/main.png">
+<img src="assets/images/mainpage.png">
 
 
 The live project can found here: <a href="https://arunvg1963.github.io/Hackathon1/" rel="nofollow">Quiz Games</a>
@@ -16,22 +16,31 @@ The live project can found here: <a href="https://arunvg1963.github.io/Hackathon
 + The site’s users want to play an online quiz to test general/specific knowledge such as sports/movies/literary knowledge or personality assessment.
 + User stories board is added to demonstrate all issues created before the development of website.
 
+
+
+<img src="assets/images/projectboard.png">
+
 # Wireframes
+
 1. Main Page
+
 <img src="assets/images/20241023_132450.jpg">
 
-2. Mental Health
-<img src="assets/images/20241023_132450.jpg">
+2. Mental Health (Arun)
+
+<img src="assets/images/arunwireframe.png">
 
 3. Music (Joe)
 
 <img src="assets/images/image_360.png">
 
-4. Forex
+4. Forex (Maciej)
+
 <img src="assets/images/20241023_132450.jpg">
 
-5. General Knowledge
-<img src="assets/images/20241023_132450.jpg">
+5. General Knowledge (Madiha)
+
+<img src="assets/images/wireframegeneral.png">
 
 
 
@@ -39,9 +48,28 @@ The live project can found here: <a href="https://arunvg1963.github.io/Hackathon
 # Design
 ## Responsivity
 site is responsive on all type of devices
+### Main Page
 
 
-<img src="assets/images/20241023_132450.jpg">
+
+<img src="assets/images/mainpage.png">
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Small Screens View
+
+<img src="assets/images/responsive.png">
+
 
 ## Color
 Color selection is a key component to any design process, General Knowledge Quiz requires to show bright beautifull colors. The artwork and color selection thus played a integral part in the design of this project as they were essential in creating a welcoming and appropriate page for the end user and their specific needs.
@@ -96,6 +124,14 @@ GitHub was used to deploy the website. These were the steps taken to acheive thi
 5. In the Source section, choose 'main' from the drop-down, select branch menu
 6. Select 'root' from the drop-down folder menu
 7. Click 'Save' and after a few moments the project will have been made live and a link is visible at the top of the page
+
+## Validators
+
+1. HTML
+
+https://validator.w3.org/nu/#textarea
+
+<img src="assets/images/htmltest.png">
 
 
 ## Acknowledgements
