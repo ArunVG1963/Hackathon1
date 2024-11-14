@@ -240,31 +240,33 @@ h2 {
 /* footer */
 
 .navbar-nav {
-  justify-content: space-evenly;
-  flex-direction: row;
- 
-  margin-left: 5rem;
-  margin-right: 5rem;
-}
-
-nav li {
-  list-style: none;
-  font-size: 30px; 
+    justify-content: space-evenly;
+    flex-direction: row;
+   
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
   
-}
-
-
-
-
-.github-profile-image {
-  display: inline-block;
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  border:1px solid rgb(194, 193, 193);
-  box-shadow: 0px 0px 20px rgb(28, 29, 30);
+  nav li {
+    list-style: none;
+    font-size: 35px; 
+    
+  }
   
-}
+  
+  .github-profile-image {
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border:1px solid rgb(194, 193, 193);
+    box-shadow: 0px 0px 20px rgb(28, 29, 30);
+    
+  }
+  .navbar-nav {
+    flex-direction: row;
+  }
+
 /* add css styling for name field */
 #name {
   color: rgb(114, 27, 201);
