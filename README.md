@@ -1,10 +1,10 @@
-# General Knowledge 
-General Knowledge quiz is my first hackathone project developed as part of the Code Institute Full Stack Software Developer Bootcamp, consisting of learning outcomes to utilise HTML5, CSS3 & Bootstrap and agile methodology in order to fulfil the necessary requirements.
+# Quiz Games
+This project is a part of Hackathon1. Members of this team developed together 4 different type of Quiz which you can select according to your mood and requirement. Mental Health, Music, Forex and General Knowledge quiz. Quiz Games is a first hackathone project developed as part of the Code Institute Full Stack Software Developer Bootcamp, consisting of learning outcomes to utilise HTML5, CSS3 & Bootstrap and agile methodology in order to fulfil the necessary requirements.
 
 <img src="assets/images/main.png">
 
 
-The live project can found here: <a href="https://madiha-babri.github.io/assignment/" rel="nofollow">General Knowledge Quiz</a>
+The live project can found here: <a href="https://arunvg1963.github.io/Hackathon1/" rel="nofollow">Quiz Games</a>
 
 ## User Stories
 
@@ -14,47 +14,62 @@ The live project can found here: <a href="https://madiha-babri.github.io/assignm
 + Responsive design that adheres to all necessary standards and accessibility requirements.
 + Use an Agile methodology to plan and design a Front End Web application.
 + The site’s users want to play an online quiz to test general/specific knowledge such as sports/movies/literary knowledge or personality assessment.
++ User stories board is added to demonstrate all issues created before the development of website.
 
 # Wireframes
-<img>
+1. Main Page
+<img src="assets/images/20241023_132450.jpg">
+
+2. Mental Health
+<img src="assets/images/20241023_132450.jpg">
+
+3. Music (Joe)
+
+<img src="assets/images/image_360.png">
+
+4. Forex
+<img src="assets/images/20241023_132450.jpg">
+
+5. General Knowledge
+<img src="assets/images/20241023_132450.jpg">
 
 
 
-## Design
-# Responsivity
+
+# Design
+## Responsivity
 site is responsive on all type of devices
-<img>
-<img>
-<img>
 
 
+<img src="assets/images/20241023_132450.jpg">
 
+## Color
 Color selection is a key component to any design process, General Knowledge Quiz requires to show bright beautifull colors. The artwork and color selection thus played a integral part in the design of this project as they were essential in creating a welcoming and appropriate page for the end user and their specific needs.
 
-So, keeping in mind the combination of blue and green, theme of the website was set accordingly. I was able to determine an appropriate color scheme that is aesthetically pleasing whilst being both calming and engaging.
 
 <img src="assets/images/20241023_132450.jpg">
 
 ## Fonts
 
 As with color, font was a big consideration for ensuring a positive user experience whilst visiting the page.
-Lato and Oswald fonts were selected for the project, and implemented via Google Fonts using a direct import code within the style.css file.
+different fonts were selected for different quizes. fonts were selected through Google Fonts using a direct import code within the style.css file.
 
 
 ## Features
 #### General Features
-In order to fulfil the criteria the page consists of various sectioned information each with a variety of links, resources and other elements that contribute to a positive user experience.
+In order to fulfil the criteria the page consists of various sectioned information and links that contribute to a positive user experience.
+javascript functionality is added on all pages of the website. All 4 quizzes are created by using javascript tools and functions.
 
 
  ###### Navigation
  
 
-Within this section I have included two buttons that present easy to navigate options for the user to access the relevant section of the page for their needs.
+Within this section buttons are added to present easy navigation options for the user to access the relevant section of the page for their needs.
 
 <img src="assets/images/navbar.png">
 
 ##### Footer
-For the footer media links were added.
+For the footer Github links were added.
 
 <img src="assets/images/footer.png">
 
@@ -62,6 +77,7 @@ For the footer media links were added.
 #### Languages Used
 + HTML5
 + CSS3
++ javascript
 #### Frameworks, Libraries, Technologies & Programs Used
 + GitHub - used to save and store all files for this website
 + Git - used for version control
@@ -81,13 +97,8 @@ GitHub was used to deploy the website. These were the steps taken to acheive thi
 6. Select 'root' from the drop-down folder menu
 7. Click 'Save' and after a few moments the project will have been made live and a link is visible at the top of the page
 
-## Credits
-### Content References
-1. The theoratically material was taken from google search.
-2. Designs and formatting was taken from "Geography Quiz" and "Marvel-quiz" projects.
-3. wallpaper was taken from google images.
-
 
 ## Acknowledgements
-1. I  would like to acknowledge my Code Institute facilitator, Vasi Pavaloi, for his supporting presence and advice.
-2. I  would like to acknowledge my collegues of code Institute for their help and support, specially my Team Members "Arun, Joe, Maciej".
+1. We would like to acknowledge our Code Institute facilitator, Vasi Pavaloi, for his supporting presence and advice.
+2. We are gratefull for our coding coach "John Rearden" and SME "Mark Briscoe" for help, generoisty and support.
+2. We  would like to acknowledge our collegues of code Institute for their help and support.
