@@ -55,7 +55,7 @@ main {
 
 body {
   margin: 0;
-  background: url(../images/backgroundquiz3.jpg) no-repeat cover;
+  background: url(/assets/images/background3.jpg) no-repeat  center / cover;
   height: 100%; 
 }
 
